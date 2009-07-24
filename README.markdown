@@ -8,6 +8,8 @@ Installation
 
 Just copy GistService.service to ~/Library/Services, or /Library/Services if you want it for all users.
 
+On Snow Leopard, you'll have to enable this service in the Keyboard Preferences pane.
+
 Authentication
 --------------
 
