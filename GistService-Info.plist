@@ -22,6 +22,8 @@
 				<key>default</key>
 				<string>Post as Gist</string>
 			</dict>
+                        <key>NSRequiredContext</key>
+                        <dict/>
 		</dict>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
