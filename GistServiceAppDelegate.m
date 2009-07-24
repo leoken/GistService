@@ -32,7 +32,6 @@
 				[args addObject:[item path]];
 			}
 			NSTask *task = [NSTask launchedTaskWithLaunchPath:toolPath arguments:args];
-			NSLog(@"Arguments: %@", args);
 			[task waitUntilExit];		
 		}
 		else
@@ -44,7 +43,6 @@
 			[task setLaunchPath:toolPath];
 			[task setArguments:[NSArray arrayWithObject:@"-o"]];
 			NSPipe *pipe = [NSPipe pipe];
-			NSLog(@"%@", contents);
 			[[pipe fileHandleForWriting] writeData:[contents dataUsingEncoding:NSUTF8StringEncoding]];
 			[[pipe fileHandleForWriting] closeFile];
 			[task setStandardInput:pipe];
