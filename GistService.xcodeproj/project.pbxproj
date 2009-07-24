@@ -31,7 +31,7 @@
 		61752B5E10197DE900F3DCDD /* GistService.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = GistService.icns; sourceTree = "<group>"; };
 		61752B7310197F6C00F3DCDD /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* GistService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GistService-Info.plist"; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* GistService.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = GistService.service; path = build/Debug/GistService.service; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* GistService.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GistService.service; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +222,7 @@
 				INFOPLIST_FILE = "GistService-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = GistService;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Debug;
 		};
@@ -236,6 +237,7 @@
 				INFOPLIST_FILE = "GistService-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = GistService;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Release;
 		};
