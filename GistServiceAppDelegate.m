@@ -26,7 +26,7 @@
 		{
 			NSArray *items = [pboard readObjectsForClasses:[NSArray arrayWithObject:[NSURL class]] options:[NSDictionary dictionary]];
 			
-			NSMutableArray *args = [NSMutableArray arrayWithObject:@"-o"];
+			NSMutableArray *args = [NSMutableArray arrayWithObjects:@"-p", @"-o", nil];
 			for (NSURL *item in items)
 			{
 				[args addObject:[item path]];
@@ -41,7 +41,7 @@
 			NSString *contents = [items objectAtIndex:0];
 			NSTask *task = [[[NSTask alloc] init] autorelease];
 			[task setLaunchPath:toolPath];
-			[task setArguments:[NSArray arrayWithObject:@"-o"]];
+			[task setArguments:[NSArray arrayWithObjects:@"-p", @"-o", nil]];
 			NSPipe *pipe = [NSPipe pipe];
 			[[pipe fileHandleForWriting] writeData:[contents dataUsingEncoding:NSUTF8StringEncoding]];
 			[[pipe fileHandleForWriting] closeFile];
