@@ -8,6 +8,12 @@ Installation
 
 Just copy GistService.service to ~/Library/Services, or /Library/Services if you want it for all users.
 
+From source:
+
+    rake install      # Install for this user
+    rake install_all  # Install for all users
+
+
 Authentication
 --------------
 
